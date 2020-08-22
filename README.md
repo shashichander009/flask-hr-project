@@ -33,9 +33,9 @@ activate the virtual env
 
 ### DATABASE SETTING UP
 
-Create a Postgres Database and add replace the link of the config.py folder. It should of the fomrat 
+Create a Postgres Database and replace the link of the config.py folder. It should be of the fomrat 
 
-postgresql://<username>:<password>@localhost:5432/<db-name>
+postgresql://username:password@localhost:5432/db-name
 
 Once you are done, run the following command 
 
@@ -43,7 +43,7 @@ Once you are done, run the following command
 flask db init 
 ```
 
-Now you have to run following command. Make sure the above database is created.
+Now you have to run the following command. Make sure the above database is created.
 
 ```bash
 flask db migrate
@@ -66,7 +66,7 @@ flask run
 Go to the URL : http://127.0.0.1:5000/  to view the project
 
 
-### Admin
+### First Steps at the Website
 
 Click Register button and create an Admin. 
 
@@ -74,7 +74,9 @@ Now go to add Employee and create an employee.
 
 On the home page, you can find employee list. 
 
-If you are logged in you can edit and delete this employee. 
+Click on any Employee to view Details of Employee
+
+If you are logged in you can edit and delete employees. 
 
 
 

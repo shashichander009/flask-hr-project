@@ -175,6 +175,7 @@ a {
 img {
   display: block;
   width: 100%;
+  border-radius: 50%;
 }
 
 /* nav */
@@ -259,7 +260,8 @@ img {
 }
 
 .employee-name {
-  font-size: 2rem;
+  margin: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .emp-form {
@@ -319,6 +321,7 @@ img {
   max-height: 30rem;
   max-width: 30rem;
   margin-bottom: 2rem;
+  border-radius: 50%;
 }
 
 .emp-container {
