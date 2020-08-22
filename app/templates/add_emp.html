@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+<h3>Employee</h3>
+
+<form class="form-fields" method="post">
+    <div class="emp-form">
+        <div class="emp-form-data ">
+
+            {{ form.hidden_tag() }}
+
+            <p>
+                {{ form.name.label(class="input-form-label") }}<br>
+                {{ form.name(size=32,class="input-form") }}<br>
+                {% for error in form.name.errors %}
+                <span class="field-errors">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+
+
+            <p>
+                {{ form.email.label(class="input-form-label") }}<br>
+                {{ form.email(size=32,class="input-form") }}<br>
+                {% for error in form.email.errors %}
+                <span class="field-errors">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.phone.label(class="input-form-label") }}<br>
+                {{ form.phone(size=32,class="input-form") }}<br>
+                {% for error in form.phone.errors %}
+                <span class="field-errors">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+
+
+            <p>
+                {{ form.location.label(class="input-form-label") }}<br>
+                {{ form.location(size=32,class="input-form") }}<br>
+                {% for error in form.location.errors %}
+                <span class="field-errors">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.salary.label(class="input-form-label") }}<br>
+                {{ form.salary(size=32,class="input-form") }}<br>
+                {% for error in form.salary.errors %}
+                <span class="field-errors">[{{ error }}]</span>
+                {% endfor %}
+            </p>
+
+            <p>{{ form.submit(class="emp-button")}}</p>
+        </div>
+    </div>
+</form>
+
+
+
+{% endblock %}

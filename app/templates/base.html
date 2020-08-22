@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% if title %}
+    <title>{{ title }} - MountBlue HR</title>
+    {% else %}
+    <title>Welcome to MountBlue HR</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+</head>
+
+<body>
+
+    <div class="site-header">
+        <nav class="nav">
+            <div class="nav-list">
+                <a href="{{ url_for('index') }}">Home</a>
+
+                {% if current_user.is_authenticated %}
+                <a href="{{ url_for('add_emp') }}">Add Employee</a>
+                {% endif %}
+
+                <div class="nav-right">
+
+                    {% if current_user.is_anonymous %}
+                    <a class="login-button" href="{{ url_for('login') }}">Login</a>
+                    <a class="register-button" href="{{ url_for('register') }}">Sign Up</a>
+                    {% else %}
+                    <a class="logout-button" href="{{ url_for('logout') }}">Logout</a>
+                    {% endif %}
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="main-body">
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul>
+            {% for  category,message in messages %}
+            <li class="alert alert-{{ category }} ">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+
+    </div>
+
+
+</body>
+
+</html>

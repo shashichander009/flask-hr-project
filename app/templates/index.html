@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="employee-section">
+
+    <h3>MountBlue Employees</h3>
+
+    <div class="employee-grid">
+        {% for employee in employees %}
+        <a href="{{ url_for('employee', id=employee.id) }}">
+            <img src="../static/images/profile.png">
+            <p class="product-name">{{employee.name}}</p>
+            <p class="employee-short-desc">Email : {{employee.email}}</p>
+            <p class="employee-short-desc">Phone : {{employee.phone}}</p>
+            <p class="employee-short-desc">Location : {{employee.location}}</p>
+            <p class="employee-short-desc">Salary [Monthly] : Rs {{employee.salary}}</p>
+        </a>
+        {% endfor %}
+    </div>
+
+</section>
+
+
+{% endblock %}

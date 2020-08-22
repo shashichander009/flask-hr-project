@@ -1,2 +1,4 @@
-mbhr
 .vscode
+migrations
+__pycache__/
+flaskenv/

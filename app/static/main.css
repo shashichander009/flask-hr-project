@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css reset ends */
+
+/* root properties */
+:root {
+  font-size: 62.5%;
+  background: white;
+}
+
+/* box-sizing to ensure that we can do box model calculations easily */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Base css*/
+
+body {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 1.8rem; /* 18px */
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* nav */
+
+.alert {
+  color: red;
+  display: block;
+}
+
+.alert-success {
+  color: green;
+}
+
+.alert-danger {
+  color: red;
+}
+
+.site-header {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.nav {
+  width: 95%;
+  font-family: "Droid Sans", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.7 rem;
+}
+
+.nav-list {
+  overflow: hidden;
+}
+
+.nav-list a {
+  display: block;
+  float: left;
+  font-size: 2.2rem;
+  padding: 0.5rem 2rem;
+}
+
+.nav-list a:hover {
+  background: black;
+  color: white;
+}
+
+.nav-right {
+  float: right;
+}
+
+.logout-button {
+  background: red;
+  color: white;
+  margin: 0 2rem;
+}
+
+/* Products section */
+
+.title-header {
+  margin: 3rem;
+}
+
+.employee-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.employee-short-desc {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.employee-name {
+  font-size: 2rem;
+}
+
+.emp-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.emp-form-data {
+  width: 50%;
+  margin: 4rem;
+}
+
+.input-form {
+  line-height: 3rem;
+  width: 30rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 1rem 1rem;
+}
+
+.input-form-label {
+  line-height: 2rem;
+  width: 30rem;
+}
+
+.emp-button {
+  margin-top: 4rem;
+  background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.emp-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.new-user {
+  margin: 10rem;
+}
+.new-user:hover {
+  color: red;
+}
+
+.emp-profile-image {
+  display: block;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-height: 30rem;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+.emp-container {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 15%;
+  height: auto;
+}
+
+.edit-update-button-container {
+  display: flex;
+  margin: 5rem;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.5rem 2rem;
+}
+.delete-button {
+  background-color: red;
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.5rem 2rem;
+}
+
+.field-errors {
+  color: red;
+}
