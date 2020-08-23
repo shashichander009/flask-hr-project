@@ -1,11 +1,10 @@
-from app import app
 from flask import render_template, flash, redirect, url_for
 from flask_login import current_user, login_user, login_required
 from flask_login import logout_user
 from app.models import Admin, Employee
 from flask import request
 from werkzeug.urls import url_parse
-from app import db
+from app import db, app
 from app.forms import LoginForm, RegistrationForm, EmpForm, UpdateEmpForm
 
 
