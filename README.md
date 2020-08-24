@@ -22,12 +22,13 @@ clone this repo
 
 create a virtual env
 
+activate the virtual env 
+
 install all dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
-activate the virtual env 
 
 ## Usage
 
@@ -77,6 +78,5 @@ On the home page, you can find employee list.
 Click on any Employee to view Details of Employee
 
 If you are logged in you can edit and delete employees. 
-
 
 

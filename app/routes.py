@@ -5,6 +5,7 @@ from app import db, app
 from app.forms import LoginForm, RegistrationForm, EmpForm, UpdateEmpForm
 from app.models import Admin, Employee
 
+
 @app.route('/')
 @app.route('/index')
 def index():
@@ -46,7 +47,7 @@ def register():
         admin.set_password(form.password.data)
         db.session.add(admin)
         db.session.commit()
-        flash('Congratulations, you are now a registered user!', 'success')
+        flash('Congratulations, you are now an Admin', 'success')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
