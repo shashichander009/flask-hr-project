@@ -33,7 +33,7 @@ activate the virtual env
 
 ### DATABASE SETTING UP
 
-Create a Postgres Database and replace the link of the config.py folder. It should be of the fomrat 
+Create a postgres Database and replace the link of SQLALCHEMY_DATABASE_URI in config.py folder. It should be of the format 
 
 postgresql://username:password@localhost:5432/db-name
 
