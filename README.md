@@ -69,9 +69,11 @@ Go to the URL : http://127.0.0.1:5000/  to view the project
 
 ### First Steps at the Website
 
-Click Register button and create an Admin. 
+Click Sign Up button and create an Admin. 
 
-Now go to add Employee and create an employee. 
+Now go to add Employee and create an employee. Important points 
+ *  Phone Number should be 10 digits 
+ *  Salary can't be zero
 
 On the home page, you can find employee list. 
 
