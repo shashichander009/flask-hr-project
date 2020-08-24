@@ -7,6 +7,7 @@
     <h3>MountBlue Employees</h3>
 
     <div class="employee-grid">
+        
         {% for employee in employees %}
         <a href="{{ url_for('employee', id=employee.id) }}">
             <img src="../static/images/profile.png">
@@ -15,6 +16,7 @@
             <p class="employee-short-desc">Phone : {{employee.phone}}</p>
         </a>
         {% endfor %}
+
     </div>
 
 </section>
