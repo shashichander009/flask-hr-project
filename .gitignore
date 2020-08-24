@@ -1,4 +1,5 @@
 .vscode
 migrations
-__pycache__/
 flaskenv/
+**/.DS_Store
+**/__pycache__/
