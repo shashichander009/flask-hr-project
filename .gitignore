@@ -1,5 +1,4 @@
 .vscode
-migrations
 flaskenv/
 **/.DS_Store
 **/__pycache__/

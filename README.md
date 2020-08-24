@@ -41,20 +41,9 @@ postgresql://username:password@localhost:5432/db-name
 Once you are done, run the following command 
 
 ```bash
-flask db init 
-```
-
-Now you have to run the following command. Make sure the above database is created.
-
-```bash
-flask db migrate
-```
-
-After the above step, run the following command. This will create Admin and Employee DB in your database
-
-```bash
 flask db upgrade
 ```
+This will create Admin and Employee DB in your database
 
 ### PROJECT USAGE
 
