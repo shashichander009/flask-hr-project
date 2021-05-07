@@ -69,6 +69,20 @@ Click on any Employee to view Details of Employee
 
 If you are logged in you can edit and delete employees.
 
-### Screenshots
+## Screenshots
+
+### Home Page
+
+![Home Screen](screenshots/home_screen.png?raw=true "Home Page")
+
+### Sign In Page
 
 ![SignIn Page](screenshots/sign_in_page.png?raw=true "Sign In Page")
+
+### Employee Detail
+
+![Employee Detail](screenshots/employee_detail.png?raw=true "Emp Detail Page")
+
+### Add Employee Page
+
+![Add Employee](screenshots/add_employee.png?raw=true "Add Emp Page")
