@@ -68,3 +68,7 @@ On the home page, you can find employee list.
 Click on any Employee to view Details of Employee
 
 If you are logged in you can edit and delete employees.
+
+### Screenshots
+
+![SignIn Page](screenshots/sign_in_page.png?raw=true "Sign In Page")
